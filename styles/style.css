@@ -264,6 +264,8 @@ footer {
         display: flex;
         justify-content: center;
         flex-direction: row;
+        height: 85px;
+        margin: 40px;
     }
 
     .second-right-box {
