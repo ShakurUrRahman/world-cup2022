@@ -8,10 +8,8 @@ body {
     font-family: 'Oswald', sans-serif;
     font-family: 'Poppins', sans-serif;
     background-color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 50px 80px 0 50px;
+
+
 }
 
 * {
@@ -27,6 +25,7 @@ body {
 .section-one {
     display: flex;
     justify-content: center;
+    padding-top: 30px;
 
 }
 
@@ -37,15 +36,14 @@ body {
     align-items: center;
     border: 0px solid black;
     border-radius: 20px;
-    padding: 0 30px;
-    width: 95%;
+    padding: 0 50px;
 
 }
 
 /* Left Section */
 
 .left-box {
-    padding-right: 30px;
+    padding: 30px;
 }
 
 .head-text {
@@ -83,7 +81,7 @@ body {
 --------------------*/
 
 .main-box {
-    padding: 50px;
+    padding: 80px;
 
 }
 
@@ -160,12 +158,28 @@ body {
     justify-content: center;
 }
 
+.view-all {
+    text-align: center;
+    visibility: hidden;
+    margin-bottom: 25px;
+}
+
+.view-all a {
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: red;
+    color: #E8E8E8;
+}
+
 /* ---------
     Footer
 ----------- */
 
 footer {
     background-color: black;
+    width: 100%;
 }
 
 .footer-text {
@@ -187,8 +201,77 @@ footer {
     color: white;
 }
 
+.footer-list li a {
+    text-decoration: none;
+    color: white;
+}
 
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.social a {
+    color: white;
+    margin-bottom: 20px;
+    padding-right: 15px;
+}
 
 /* ---------------
    Media Quries
 ---------------- */
+
+/* Mobile Devices */
+
+@media screen and (max-width: 576px) {
+
+    .top-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-article {
+        flex-direction: column;
+    }
+
+    .second-right-box {
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+
+    .footer-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Tab Devices */
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+
+    .top-box {
+        width: 100%;
+    }
+
+    .main-article {
+        flex-direction: column;
+    }
+
+    .second-left-box {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .second-right-box {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+
+    }
+
+    .view-all {
+        visibility: visible;
+    }
