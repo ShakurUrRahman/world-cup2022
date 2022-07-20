@@ -220,6 +220,45 @@ footer {
     padding-right: 15px;
 }
 
+/* Animation Part */
+
+.first-button:hover {
+    transition: change ease-in 0.5s;
+    transform: scale(1.1);
+    animation: change 1.7s linear infinite;
+}
+
+@keyframes change {
+
+    0% {
+        background-color: yellowgreen;
+        border: 1px solid blue;
+        border-radius: 25%;
+        font-size: large;
+    }
+
+    25% {
+        background-color: yellowgreen;
+        border-top: 2px solid blue;
+        border-radius: 50%;
+        font-size: larger;
+    }
+
+    50% {
+        background-color: yellowgreen;
+        border-right: 5px solid blue;
+        border-radius: 75%;
+        font-size: bold;
+    }
+
+    100% {
+        background-color: yellowgreen;
+        border-bottom: 1px solid blue;
+        border-radius: 100%;
+        font-size: bold;
+    }
+}
+
 /* ---------------
    Media Quries
 ---------------- */
