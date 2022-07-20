@@ -1,0 +1,188 @@
+/* --------Font--------*/
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro&family=Oswald:wght@200&family=Poppins:wght@400;500;600&display=swap');
+
+/*----Common Styles----*/
+
+body {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 80px 0 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-------------------
+   The Header Box
+--------------------*/
+
+.section-one {
+    display: flex;
+    justify-content: center;
+
+}
+
+.top-box {
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 0px solid black;
+    border-radius: 20px;
+    padding: 0 30px;
+    width: 95%;
+
+}
+
+/* Left Section */
+
+.left-box {
+    padding-right: 30px;
+}
+
+.head-text {
+    font-size: 55px;
+    font-weight: bolder;
+    color: #2356C3;
+}
+
+.first-para {
+    color: #079B5E;
+}
+
+.first-button {
+    font-weight: bold;
+    background-color: #D5B80F;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.first-button a {
+    text-decoration: none;
+}
+
+/* Right Section */
+
+.right-box {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+/*-------------------
+   Main Article Part
+--------------------*/
+
+.main-box {
+    padding: 50px;
+
+}
+
+.main-article {
+    display: flex;
+    justify-content: center;
+}
+
+/* Left Part */
+
+.second-left-box {
+    background-color: black;
+    text-decoration: none;
+    border-radius: 15px;
+    height: 250px;
+    margin-right: 20px;
+}
+
+.second-left-box li {
+    background-color: white;
+    list-style: none;
+    margin: 15px 5px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 16px 5px;
+    font-weight: bold;
+}
+
+.second-left-box li a {
+    text-decoration: none;
+    color: black;
+}
+
+.second-left-box li:hover {
+    background-color: green;
+}
+
+/* Right Part */
+
+.second-right-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+
+/* Inner Blog Part */
+
+.blog-part {
+    height: 312px;
+    width: 312px;
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+}
+
+.blog-mid {
+    padding: 10px 15px;
+}
+
+.blog-mid button {
+    padding: 5px;
+}
+
+.blog-end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+
+}
+
+.blog-detail {
+    display: flex;
+    justify-content: center;
+}
+
+/* ---------
+    Footer
+----------- */
+
+footer {
+    background-color: black;
+}
+
+.footer-text {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0;
+}
+
+.footer-list li {
+    list-style: none;
+    color: white;
+}
