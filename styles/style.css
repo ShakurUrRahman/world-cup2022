@@ -274,6 +274,7 @@ footer {
 
     .main-article {
         flex-direction: column;
+        align-items: center;
     }
 
     .second-right-box {
